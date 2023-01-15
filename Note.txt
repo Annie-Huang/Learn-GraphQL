@@ -68,3 +68,11 @@ Query to run:
 {authors {
   name
 }}
+
+4. How to get the a list of books written by the author
+{authors {
+  name
+  books {
+    name
+  }
+}}

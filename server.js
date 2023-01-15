@@ -52,6 +52,14 @@ const AuthorType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLNonNull(GraphQLInt) },
     name: { type: GraphQLNonNull(GraphQLString) },
+
+    // How to get the a list of books written by the author:
+    books: {
+      type: new GraphQLList(BookType),
+      resolve: (author) => {
+        return books.filter((book) => book.authorId === author.id);
+      },
+    },
   }),
 });
 
