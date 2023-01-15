@@ -76,3 +76,8 @@ Query to run:
     name
   }
 }}
+
+5. Get book with id 1:
+{book(id: 1) {
+  name
+}}
