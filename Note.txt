@@ -7,3 +7,8 @@ https://github.com/Annie-Huang/Learn-GraphQL
 
 PS C:\react\Learn-GraphQL> npm i express express-graphql graphql
 PS C:\react\Learn-GraphQL> npm i --save-dev nodemon
+
+https://stackoverflow.com/questions/65517979/expressgraphql-is-not-a-function
+
+http://localhost:5000/
+http://localhost:5000/graphql?
