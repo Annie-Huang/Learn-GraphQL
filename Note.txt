@@ -119,3 +119,20 @@ mutation {
   id
   name
 }}
+
+8. Add a new author into the authors array:
+mutation {
+  addAuthor(name: "New Author") {
+    id
+    name
+  }
+}
+
+(and verified it's added, and query the books as well:)
+{authors {
+  id
+  name
+  books {
+    name
+  }
+}}
