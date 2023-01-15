@@ -63,3 +63,8 @@ Query to run:
     name
   }
 }}
+
+3.
+{authors {
+  name
+}}
