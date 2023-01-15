@@ -49,6 +49,9 @@ http://localhost:5000/graphql?
 
 ------------------------
 
+GraphQL be default use query. If you want it to do mutation, you will need to add the mutation keyword
+Also mutation has to use double quote to pass into new value, because GraphQL is like json, single quote is invalid.
+
 Query to run:
 1.
 {books {
@@ -101,4 +104,18 @@ Query to run:
   books {
     name
   }
+}}
+
+7. Add a new book into books array:
+mutation {
+  addBook(name: "New Name", authorId: 1) {
+    id
+    name
+  }
+}
+
+(and verified it's added:)
+{books {
+  id
+  name
 }}
