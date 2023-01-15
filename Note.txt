@@ -56,3 +56,10 @@ Query to run:
   name
 }}
 
+2. How to get the actual author from the book:
+{books {
+  id,
+  author {
+    name
+  }
+}}
