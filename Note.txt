@@ -89,3 +89,8 @@ Query to run:
     name
   }
 }}
+
+6. Get author with id 2:
+{author(id: 2) {
+  name
+}}
