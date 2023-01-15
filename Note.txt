@@ -81,3 +81,11 @@ Query to run:
 {book(id: 1) {
   name
 }}
+
+(And you can find the author info from the particular book id as well:)
+{book(id: 1) {
+  name
+  author {
+    name
+  }
+}}
