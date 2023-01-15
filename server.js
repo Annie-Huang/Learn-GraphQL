@@ -30,6 +30,8 @@ const books = [
 const BookType = new GraphQLObjectType({
   name: 'Book',
   description: 'This represents a book written by an author',
+
+  // Need to use function for 'fields', because function got defined first (hoist). otherwise, it will complain BookTypes refers to AuthorType which refers to BookType again and into compile error.
   fields: () => ({
     id: { type: GraphQLNonNull(GraphQLInt) },
     name: { type: GraphQLNonNull(GraphQLString) },
@@ -49,6 +51,8 @@ const BookType = new GraphQLObjectType({
 const AuthorType = new GraphQLObjectType({
   name: 'Author',
   description: 'This represents a author of a book',
+
+  // Need to use function for 'fields', because function got defined first (hoist). otherwise, it will complain AuthorType refers to BookTypes which refers to AuthorType again and into compile error.
   fields: () => ({
     id: { type: GraphQLNonNull(GraphQLInt) },
     name: { type: GraphQLNonNull(GraphQLString) },
