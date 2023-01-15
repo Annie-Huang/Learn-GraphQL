@@ -4,3 +4,5 @@ https://github.com/WebDevSimplified/Learn-GraphQL
 https://github.com/Annie-Huang/Learn-GraphQL
 
 --------------------------------------------------------------
+
+PS C:\react\Learn-GraphQL> npm i express express-graphql graphql
