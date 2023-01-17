@@ -4,9 +4,15 @@ https://github.com/WebDevSimplified/Learn-GraphQL
 https://github.com/Annie-Huang/Learn-GraphQL
 
 Other tutorial:
+1.
 GraphQL Client Tutorial With Fetch https://www.youtube.com/watch?v=0ZJI4cBS4JM
 (https://github.com/WebDevSimplified/GraphQL-Client-Fetch)
-
+2.
+What Is GraphQL? REST vs. GraphQL https://www.youtube.com/watch?v=yWzKJPw_VzM
+3.
+GraphQL Explained in 100 Seconds (Fireship)
+4.
+3 Things I wish I knew when starting with GraphQL ft Kitze | Prismic https://www.youtube.com/watch?v=0yr25jzVLMg
 
 --------------------------------------------------------------
 
@@ -20,6 +26,29 @@ http://localhost:5000/graphql?
 
 
 -----------------------------------------------------------------------
+
+When you are using GraphQL in the client side, you can see all the method is 'POST', even though we just GET the information.
+All http method has to be a "POST", which make GraphicQL hard to cache and potentially reduce performance.
+
+function queryFetch(query, variables) {
+  return fetch('https://countries.trevorblades.com/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: query,
+      variables: variables
+    })
+  }).then(res => res.json())
+}
+
+-----------------------------------------------------------------------
+Other tips:
+
+Use small query and use as much fragment as you can
+
+-----------------------------------------------------------------------
+
+
 
 # Welcome to GraphiQL
 #
@@ -141,3 +170,31 @@ mutation {
     name
   }
 }}
+
+---------------------
+For GraphQL Client Tutorial With Fetch
+
+query {
+  continents {
+    code
+    name
+  }
+}
+
+query {
+  continent(code: "AF") {
+    countries {
+      name
+      code
+    }
+  }
+}
+
+query getCountries($code: ID!){
+  continent(code: $code) {
+    countries {
+      name
+    }
+  }
+}
+then in Query Variables at the bottom, put {"code": "AF"} and run
