@@ -3,6 +3,11 @@ Learn GraphQL In 40 Minutes (https://www.youtube.com/watch?v=ZQL7tL2S0oQ)
 https://github.com/WebDevSimplified/Learn-GraphQL
 https://github.com/Annie-Huang/Learn-GraphQL
 
+Other tutorial:
+GraphQL Client Tutorial With Fetch https://www.youtube.com/watch?v=0ZJI4cBS4JM
+(https://github.com/WebDevSimplified/GraphQL-Client-Fetch)
+
+
 --------------------------------------------------------------
 
 PS C:\react\Learn-GraphQL> npm i express express-graphql graphql
