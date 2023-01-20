@@ -13,16 +13,11 @@ What Is GraphQL? REST vs. GraphQL https://www.youtube.com/watch?v=yWzKJPw_VzM
 GraphQL Explained in 100 Seconds (Fireship)
 4.
 3 Things I wish I knew when starting with GraphQL ft Kitze | Prismic https://www.youtube.com/watch?v=0yr25jzVLMg
+5.
+GraphQL, tRPC, REST and more - Pick Your Poison (Theo - t3.gg) << This contains really good diagram for graphQL
+6.
+tRPC - GraphQL KILLER??! (Theo - t3.gg)
 
---------------------------------------------------------------
-
-PS C:\react\Learn-GraphQL> npm i express express-graphql graphql
-PS C:\react\Learn-GraphQL> npm i --save-dev nodemon
-
-https://stackoverflow.com/questions/65517979/expressgraphql-is-not-a-function
-
-http://localhost:5000/
-http://localhost:5000/graphql?
 
 
 -----------------------------------------------------------------------
@@ -45,10 +40,19 @@ function queryFetch(query, variables) {
 Other tips:
 
 Use small query and use as much fragment as you can
+It seems in (GraphQL, tRPC, REST and more - Pick Your Poison), it is said everything in graphyQL is supposed to be public, not provision. e.g. not login user, logout user to have the right to access certain things....
 
 -----------------------------------------------------------------------
 
+PS C:\react\Learn-GraphQL> npm i express express-graphql graphql
+PS C:\react\Learn-GraphQL> npm i --save-dev nodemon
 
+https://stackoverflow.com/questions/65517979/expressgraphql-is-not-a-function
+
+http://localhost:5000/
+http://localhost:5000/graphql?
+
+--------------------------------------------------------------
 
 # Welcome to GraphiQL
 #
