@@ -1,11 +1,11 @@
-Learn GraphQL In 40 Minutes (https://www.youtube.com/watch?v=ZQL7tL2S0oQ)
+Learn GraphQL In 40 Minutes (https://www.youtube.com/watch?v=ZQL7tL2S0oQ)           << code
 
 https://github.com/WebDevSimplified/Learn-GraphQL
 https://github.com/Annie-Huang/Learn-GraphQL
 
 Other tutorial:
 1.
-GraphQL Client Tutorial With Fetch https://www.youtube.com/watch?v=0ZJI4cBS4JM
+GraphQL Client Tutorial With Fetch https://www.youtube.com/watch?v=0ZJI4cBS4JM      << code
 (https://github.com/WebDevSimplified/GraphQL-Client-Fetch)
 2.
 What Is GraphQL? REST vs. GraphQL https://www.youtube.com/watch?v=yWzKJPw_VzM
@@ -17,7 +17,8 @@ GraphQL Explained in 100 Seconds (Fireship)
 GraphQL, tRPC, REST and more - Pick Your Poison (Theo - t3.gg) << This contains really good diagram for graphQL
 6.
 tRPC - GraphQL KILLER??! (Theo - t3.gg)
-
+7.
+GraphQL vs REST: what you need to know
 
 
 -----------------------------------------------------------------------
@@ -41,6 +42,19 @@ Other tips:
 
 Use small query and use as much fragment as you can
 It seems in (GraphQL, tRPC, REST and more - Pick Your Poison), it is said everything in graphyQL is supposed to be public, not provision. e.g. not login user, logout user to have the right to access certain things....
+
+
+GraphQL's 4 advantages:
+- Navigate a relational graph
+- Client-side data shaping
+- Introspection / auto documentation
+- Types
+
+GraphQL's weakness:
+- Difficult optimisation
+- N+1 problem e.g run all the queries in a single request. When searching deep into the graph, the complexity grows exponentially. It would bring down the database to its knees
+  It's the frontend dev's responsibility to think about not overloading the database.
+
 
 -----------------------------------------------------------------------
 
