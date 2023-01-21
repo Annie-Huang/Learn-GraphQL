@@ -18,8 +18,9 @@ GraphQL, tRPC, REST and more - Pick Your Poison (Theo - t3.gg) << This contains 
 6.
 tRPC - GraphQL KILLER??! (Theo - t3.gg)
 7.
-GraphQL vs REST: what you need to know
-
+GraphQL vs REST: what you need to know (Kodaps Academy)
+8.
+GraphQL Crash Course With Full Stack MERN Project (Traversy Media)
 
 -----------------------------------------------------------------------
 
