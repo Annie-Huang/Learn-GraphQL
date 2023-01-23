@@ -20,7 +20,7 @@ tRPC - GraphQL KILLER??! (Theo - t3.gg)
 7.
 GraphQL vs REST: what you need to know (Kodaps Academy)
 8.
-GraphQL Crash Course With Full Stack MERN Project (Traversy Media)
+GraphQL Crash Course With Full Stack MERN Project (Traversy Media)     << code
 
 -----------------------------------------------------------------------
 
