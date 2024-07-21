@@ -64,8 +64,8 @@ PS C:\react\Learn-GraphQL> npm i --save-dev nodemon
 
 https://stackoverflow.com/questions/65517979/expressgraphql-is-not-a-function
 
-http://localhost:5000/
-http://localhost:5000/graphql?
+http://localhost:5000/              <-- check the express app is running
+http://localhost:5000/graphql?      <-- check the graphql is running
 
 --------------------------------------------------------------
 
@@ -160,6 +160,7 @@ Query to run:
 }}
 
 7. Add a new book into books array:
+(id and name meaning after you add the new book, you choose to see the new id, and name info of the newly add item, it does not have to match args to add into for adding a book)
 mutation {
   addBook(name: "New Name", authorId: 1) {
     id
